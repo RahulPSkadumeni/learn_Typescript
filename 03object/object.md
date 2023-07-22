@@ -32,3 +32,24 @@ it will work like this
 ![Alt text](image-3.png)
 
 <h1>typeAliases</h1>
+if we want to use same property over  multiple location, us type aliases
+consider object user, that we use  multiple location, create it with a 
+ <h4>"type keyword"</h4>
+
+![Alt text](image-4.png)
+
+<h2>Make property Read Only</h2>
+ use case eg: mongodb, object Id we need to read only this ,never modify this
+
+![Alt text](image-5.png)
+
+![Alt text](image-6.png)
+
+<h2>? for optional data</h2>
+
+![Alt text](image-7.png)
+
+  <h2>Using already made types two create another new type</h2>
+
+  
+  ![Alt text](image-8.png)
