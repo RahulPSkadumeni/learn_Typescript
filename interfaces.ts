@@ -31,4 +31,46 @@ const Rahul: user1 = {
   },
 };
 
-// you dont even need to match name==couponName
+// you don't even need to match name==couponName
+
+//* reopening Interfaces
+interface user1 {
+  githubId: string;
+}
+
+const Rahul: user1 = {
+  dbId: 31,
+  email: "rahulps@gmail.com",
+  userId: 4242,
+  startTrial: () => {
+    return "trial started at 13/06/23";
+  },
+  getCoupon: (Name: "offer10", off: 10) => {
+    console.log(off);
+    return 10;
+  },
+  githubId: "rahulpskadumeni",
+};
+
+//* no need touch  interface but an add
+//*something new to it and use it
+
+//??Inheritance
+interface Admin extends user1, user1, anotherInterface {
+  role: "admin" | "ta" | "learner";
+}
+
+const RahulAdmin: Admin = {
+  dbId: 31,
+  email: "rahulps@gmail.com",
+  userId: 4242,
+  startTrial: () => {
+    return "trial started at 13/06/23";
+  },
+  getCoupon: (Name: "offer10", off: 10) => {
+    console.log(off);
+    return 10;
+  },
+  githubId: "rahulpskadumeni",
+  role: "admin",
+};
